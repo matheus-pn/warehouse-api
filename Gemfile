@@ -36,6 +36,3 @@ group :development do
 end
 
 gem "bcrypt"
-gem "importmap-rails"
-gem "sprockets-rails"
-gem "view_component"
