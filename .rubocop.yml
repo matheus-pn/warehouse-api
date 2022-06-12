@@ -1,0 +1,53 @@
+# The behavior of RuboCop can be controlled via the .rubocop.yml
+# configuration file. It makes it possible to enable/disable
+# certain cops (checks) and to alter their behavior if they accept
+# any parameters. The file can be placed either in your home
+# directory or in some project directory.
+#
+# RuboCop will start looking for the configuration file in the directory
+# where the inspected file is and continue its way up to the root directory.
+#
+# See https://docs.rubocop.org/rubocop/configuration
+
+require:
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+
+Rails/IndexBy:
+  Enabled: true
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/components/**/*'
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+# Align `end` with the matching keyword or starting expression except for
+# assignments, where it should be aligned with the LHS.
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+  AutoCorrect: true
+
+Layout/EmptyLinesAroundAccessModifier:
+  EnforcedStyle: only_before
+
+# Method definitions after `private` or `protected` isolated calls need one
+# extra level of indentation.
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+# Use `foo { bar }` not `foo {bar}`.
+Layout/SpaceInsideBlockBraces:
+  EnforcedStyleForEmptyBraces: space
+
+# Check quotes usage according to lint rule below.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
