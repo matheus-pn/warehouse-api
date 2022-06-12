@@ -15,9 +15,4 @@ Rails.application.routes.draw do
       resources :inventory_products, only: %i[index create update]
     end
   end
-
-  namespace :dash do
-    root "dashboard#hello"
-    resources :products
-  end
 end
