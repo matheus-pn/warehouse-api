@@ -10,7 +10,7 @@ module Core
     has_many :products, through: :inventory_products, inverse_of: :inventories
 
     def products=(*)
-      raise NotImplementedError, "Dangerous fucking method"
+      raise NotImplementedError, "Dangerous f-ing method"
     end
 
     def fetch_enterprise; end

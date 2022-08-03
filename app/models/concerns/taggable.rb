@@ -8,7 +8,7 @@ module Taggable
     has_many :tags, through: :tag_relations, dependent: :destroy
 
     def tags=(*)
-      raise NotImplementedError, "Dangerous fucking method"
+      raise NotImplementedError, "Dangerous f-ing method"
     end
   end
 end

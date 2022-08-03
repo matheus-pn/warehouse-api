@@ -8,7 +8,7 @@ module Core
     enum mode: { physical: 0, virtual: 1 }
 
     def inventories=(*)
-      raise NotImplementedError, "Dangerous fucking method"
+      raise NotImplementedError, "Dangerous f-ing method"
     end
 
     def base_components

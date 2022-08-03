@@ -9,7 +9,7 @@ module Core
     belongs_to :division
 
     def inventories=(*)
-      raise NotImplementedError, "Dangerous fucking method"
+      raise NotImplementedError, "Dangerous f-ing method"
     end
 
     def product_pool
