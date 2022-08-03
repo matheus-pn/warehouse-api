@@ -29,16 +29,6 @@ Core::Inventory.create([
   { division: extrema,  name: "Produção" }
 ])
 
-# products = JSON.parse(File.read("db/products.json"))
-# products.each { |prod| prod.merge!(enterprise_id: gocase.id, mode: 0) }
-# Core::Product.insert_all(products)
-
-# Core::Inventory.all.each do |inventory|
-#   Core::Product.all.each do |product|
-#     inventory.inventory_products.create(product: product, quantity: (rand * 2000).to_i)
-#   end
-# end
-
 montadora = Enterprise::Create.one(name: "Montadora")
 
 root = montadora.root_division
