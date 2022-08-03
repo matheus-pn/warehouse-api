@@ -32,7 +32,6 @@ group :development do
   gem "rubocop-rails"
   gem "solargraph"
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
 end
 
 gem "bcrypt"
